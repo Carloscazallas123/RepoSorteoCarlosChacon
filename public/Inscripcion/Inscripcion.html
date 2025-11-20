@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Inscripcion.css">
+    <title>Formulario del Sorteo</title>
+</head>
+<body>
+
+<audio id="audio" src="../Contenido/AudioBasquet.mp3" autoplay loop> </audio>
+    <div class="ContenedorFormulario">
+    <marquee style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Asegurese de introducir bien los datos, ¡Les deseo mucha suerte!</marquee>
+        <div class="Titulo">
+            <h1 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Sorteo de una Camiseta de Baloncesto</h1>
+            <h4 style="font-size: medium;">Colabración por parte de la Empresa de Nike (Una Camiseta de los Chicago Bulls
+            firmada por el mismisimo Michael Jordan).Si desea participar, le pedimos que <br>
+            rellene el siguiente formulario.</h4>
+        </div>
+
+        <div>
+            <img id="Imagen" src="../Contenido/CamisetaJordan.png" alt="Camiseta Baloncesto Nike">
+        </div>
+
+        <div class="Formulario">
+
+            <div class="Inputs">
+                <label for="nombre">Nombre:</label><br>
+                <input onclick="document.getElementById('audio').play()" type="text" id="nombre" name="nombre" style="width: 300px;" required autocomplete="additional-name"><br>
+            </div>
+            
+            <div class="Inputs">
+                <label for="apellidos">Apellidos:</label><br>
+                <input type="text" id="apellidos" name="apellidos" style="width: 300px;" required autocomplete="additional-name"><br>
+            </div>
+            
+            <div class="Inputs">
+                   <label for="email">Correo Electrónico:</label><br>
+                <input type="email" id="email" name="email" style="width: 300px;" required autocomplete="additional-name"><br>  
+            </div>
+            
+            <div class="Inputs">
+                <label for="phone">Numero de Telefono:</label><br>
+                <input type="number" id="phone" name="phone"style="width: 300px;" required autocomplete="additional-name"><br> 
+            </div>
+             
+            <div class="Inputs">
+                <label for="Nacimiento">Fecha de Nacimiento: </label><br>
+                <input type="date" id="Nacimiento" name="Nacimiento" required><br> 
+            </div>
+            
+            <div class="Inputs" id="Terminos">
+            <input type="checkbox" id="terminos" name="terminos" required>
+            <label for="terminos">Acepto los Terminos y Condiciones de la Politica de Privacidad por parte de nuestra empresa.
+            Dichos Terminos se encargan de proteger todo tipo de datos del usuario.</label><br>
+            </div>
+
+            <input type="submit" value="Apuntarte al Sorteo" id="Boton" onclick="AnadirUsuario()" action="/users">
+        </div>
+    </div>
+
+<script src="Inscripcion.js"></script>
+</body>
+
+</html>

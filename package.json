@@ -1,0 +1,16 @@
+{
+  "name": "ejemplo",
+  "version": "1.0.0",
+  "description": "ejemplo de paquete ",
+  "license": "ISC",
+  "author": "Carlos Chacon",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "mongodb": "^6.20.0"
+  }
+}

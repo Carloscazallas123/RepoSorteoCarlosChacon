@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Sorteo.css">
+    <title>Reusltado del Sorteo</title>
+</head>
+<body>
+    <audio src="../Contenido/Voicy_You've got to be ready to play.mp3" id="audio"></audio>
+    <div class="ContenedorGanador">
+        <h1>El Ganador de este Sorteo es....</h1>
+        <h1 id="nombreGanador"></h1>
+        <div class="contenedortexto">
+        <p>¡Felicidades! 
+        Has sido seleccionado como el ganador del sorteo.<br>
+        Por favor, ponte en contacto con nosotros para reclamar tu premio.<br>
+        si tienes alguna pregunta, no dudes en comunicarte con nuestro equipo de soporte.
+        </p>
+        </div>
+        <img src="../Contenido/ElGoat.gif" alt="La Cabra" onclick="document.getElementById('audio').play()">
+    
+    </div>
+<script src="Sorteo.js"></script>
+</body>
+</html>
