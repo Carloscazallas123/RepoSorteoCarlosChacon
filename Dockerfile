@@ -6,7 +6,7 @@ COPY package.json ./
 
 RUN npm install
 
-COPY server.js ./
+COPY main.js ./
 COPY public/ ./public
 
 EXPOSE 3000
