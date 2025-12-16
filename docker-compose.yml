@@ -2,7 +2,7 @@ services:
   web:
     image: nginx
     ports:
-      - 80:443
+      - 433:443
     volumes:
       - .:/usr/share/nginx/html
       - ./nginx.conf:/etc/nginx/nginx.conf
