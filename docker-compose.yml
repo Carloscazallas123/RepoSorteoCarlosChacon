@@ -11,8 +11,6 @@ services:
 
   depends:
     build: .
-    ports:
-      - 3000:3000
     env_file: ".env"
     environment:
       MONGO_USER: ${Usuario_Mongo}
@@ -23,8 +21,6 @@ services:
 
   db:
     image: mongo
-    ports:
-      - 27017:27017
     env_file: ".env"
     environment:
       MONGO_INITDB_ROOT_USERNAME: ${Usuario_Mongo}
