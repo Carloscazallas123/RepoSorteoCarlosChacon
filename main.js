@@ -4,7 +4,7 @@ const { MongoClient } = require('mongodb');
 const app = express();
 const port = 3000;
 
-const uri = 'mongodb+srv://carloschaconcazallas0_db_user:carloszz156@basededatossorteo.qmdpcvv.mongodb.net/?appName=BaseDeDatosSorteo';
+const uri = `mongodb://${process.env.Usuario_Mongo}:${process.env.Usuario_Password}@${process.env.MongoHost}`;
 //http://localhost:3000/
 
 // Create a MongoClient instance
