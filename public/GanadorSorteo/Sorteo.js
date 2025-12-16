@@ -14,6 +14,7 @@ async function ObtenerGanador() {
         for(let i=0; i<datos.length; i++){
             Usuarios.push(datos[i].nombre);
             
+            
         }
         console.log(Usuarios);
     } catch (error) {

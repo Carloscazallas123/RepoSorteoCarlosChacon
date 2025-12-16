@@ -46,7 +46,7 @@ function AnadirUsuario() {
     console.log("Fecha de Nacimiento: " + fecha);
 
     // Crear la fecha para el sorteo
-    let fechaSorteo = new Date("2025-12-19T11:09:00");
+    let fechaSorteo = new Date("2025-12-27T11:09:00");
     let FechaActual = new Date();
 
     //Guardar la informacion del usuario en cookies

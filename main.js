@@ -43,10 +43,10 @@ async function main() {
 
   // Metodo para redirigirme a una pagina u otra 
   app.get('/', (req, res) => {
-  let fechaSorteo = new Date("2025-12-19T14:00:00");
+  let fechaSorteo = new Date("2025-09-10T14:00:00");
   let  fechaActual = new Date();
   
-  if (fechaActual<fechaSorteo){
+  if (fechaActual>fechaSorteo){
     res.redirect("/GanadorSorteo");
   } else {
     res.redirect("/Inscripcion");
