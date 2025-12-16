@@ -13,9 +13,9 @@ services:
     build: .
     env_file: ".env"
     environment:
-      MONGO_USER: ${Usuario_Mongo}
-      MONGO_PASSWORD: ${Usuario_Password}
-      MONGOHOST: ${MongoHost}
+      Usuario_Mongo: ${Usuario_Mongo}
+      Usuario_Password: ${Usuario_Password}
+      MongoHost: ${MongoHost}
     depends_on:
       - db
 
