@@ -9,7 +9,7 @@ services:
       - ./ssl/nginx.crt:/etc/nginx/ssl/nginx.crt
       - ./ssl/nginx.key:/etc/nginx/ssl/nginx.key
 
-  depends:
+  api:
     build: .
     env_file: ".env"
     environment:
